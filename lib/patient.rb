@@ -9,4 +9,8 @@ class Patient
   def self.all
     @@all
   end
+
+  def new_appointment(date, doctor)
+    Appointment.new(date, patient, doctor) 
+  end
 end
